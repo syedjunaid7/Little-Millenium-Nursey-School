@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className="main-card-box">
       {cardData?.map((item, index) => (
-        <div className="portrait-card" key={index} >
+        <div className="portrait-card" key={index}>
           <img src={item.imgPath} alt="Card" className="card-image" data-aos="zoom-out"/>
           <h3 className="card-heading">{item.title}</h3>
           <p>{item.detail}</p>

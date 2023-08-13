@@ -32,7 +32,7 @@ export default function About() {
 
       <section className="about-top">
         <div className="about-top-in">
-          <div className="about-content" data-aos="fade-right">
+          <div className="about-content">
             <h1 className="about-h1">
               <span>Little Millennium®</span> <br />
               <span style={{ fontSize: "2.5rem", color: "black" }}>
@@ -74,7 +74,7 @@ export default function About() {
           <h1>
             School <span>Activities</span>
           </h1>
-          <p data-aos="fade-right">
+          <p>
             At <strong>Little Millennium Convent School</strong> , the emphasis
             is on building the right foundation for the child every day through
             play activities and collaborative group work. Highly trained staff,
@@ -144,7 +144,7 @@ export default function About() {
           <h1>
             <span>School</span> Infrastructure
           </h1>
-          <p data-aos="zoom-in">
+          <p>
             Every <strong>Little Millennium Convent</strong> Centre follows a
             child-centric preschool infrastructure design methodology, which
             provides a safe and hygienic environment with a crisp colourful
