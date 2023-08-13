@@ -31,11 +31,10 @@ export default function Main() {
             <span style={{ color: "#6d3fb1" }}>WELCOME TO</span> Little
             Millenium Convent
           </h1>
-          <h3>About Little Millenium Convent</h3>
           <p className="about-para" name-aos="fade-down">
             The name <strong>Little Millenium</strong> comes from the Latin
             language and means, educate, teach and instruct.
-            <strong>Little Millenium Convent</strong> school is one of the most
+            <strong> Little Millenium Convent</strong> school is one of the most
             prestigious school of Allahabad it has a wonderful atmosphere in a
             campus. Our school aim to be an institution of excellence, dedicated
             to prepare students for world of tomorrow.

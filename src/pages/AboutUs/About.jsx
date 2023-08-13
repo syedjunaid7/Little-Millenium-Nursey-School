@@ -63,7 +63,7 @@ export default function About() {
               <h2>
                 <CountUp className="countUp" start={0} end={20} duration={4} />
               </h2>
-              <h1>PRESCHOOL CENTERSS</h1>
+              <h1>PRESCHOOL CENTERS</h1>
             </div>
           </div>
         </div>
