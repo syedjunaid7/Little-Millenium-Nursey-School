@@ -84,15 +84,6 @@
       justify-content: center;
       width: 100%;
     }
-    .mssg-input{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      input{
-        padding: 2.5rem 2rem;
-      }
-      margin-bottom: 0.7rem;
-    }
   }
 }
 
@@ -136,54 +127,13 @@
   }
 }
 
-
-// @media (max-width: 768px) {
-//   .admission-container {
-//     flex-direction: column;
-//     padding: 1rem;
-//   }
-//   .sec1-Admission {
-//     text-align: center;
-//     .icons-box {
-//       gap: 0;
-//     }
-//     img {
-//       width: 25%;
-//     }
-//   }
-
-//   .sec2-Admission {
-//     padding: 0.7rem;
-//     padding-bottom: 1rem;
-//     button {
-//       width: 40%;
-//     }
-//     .mssgBox {
-//       padding: 2rem 1.2rem;
-//     }
-//     input {
-//       width: 85%;
-//     }
-//   }
-//   .sec3-Admission {
-//     padding: 5rem 1rem;
-//     .process-card {
-//       margin-top: 30px;
-//       flex-direction: column;
-//       div {
-//         width: auto;
-//         height: 20vh;
-//       }
-//     }
-//   }
-// }
 @media (max-width: 1920px) {
   .admission-container .sec2-Admission {
     margin-bottom: 0;
   }
 }
 
-@media(max-width : 400px){
+@media(max-width : 768px){
   .admission-container .sec1-Admission h1 {
     font-size: var(--mobile-scree-h1);
     margin-bottom: 15px;

@@ -6,7 +6,6 @@ import kangaroo from "../../assets/images/Our-Purpose.webp";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
-import PhoneLink from "../../assets/links/PhoneLink";
 
 export default function Main() {
   const [name, setname] = useState('');

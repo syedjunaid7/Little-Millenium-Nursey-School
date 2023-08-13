@@ -1,17 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Admission.scss";
 import icon1 from "../../assets/images/icon2.png";
 import icon2 from "../../assets/images/icon4.png";
 import icon3 from "../../assets/images/icon5.png";
 import icon4 from "../../assets/images/icon3.png";
-import { Tooltip } from "react-tooltip";
 import bird from "../../assets/images/bird.png";
 import { useNavigate } from "react-router-dom";
 import { HiOutlineChevronRight } from "react-icons/hi";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Adimission() {
   const navigate = useNavigate();
+  const [fName, setFname] = useState("");
+  const [cName, setCname] = useState("");
+  const [pNumber, setpNumber] = useState("");
+  const [eMail, setEmail] = useState("");
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (fName !== "" || cName !== "" || pNumber !== "" || eMail !== "") {
+      toast(" We will Reach Youu Soon !");
+      setFname("");
+      setCname("");
+      setpNumber("");
+      setEmail("");
+     
+    }
+  };
   return (
     <>
       <div className="topper">
@@ -55,73 +70,46 @@ export default function Adimission() {
 
         <div className="sec2-Admission" data-aos="zoom-in">
           <img src={bird} />
-
-          <form>
+          <form onSubmit={handleSubmit}>
             <h3>
               <span>Preschool </span>Admission Form
             </h3>
             <input
               type="input"
               className="input1"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content="name is required*"
               placeholder="Full Name"
+              required
+              value={fName}
+              onChange={(e) => setFname(e.target.value)}
             />
             <input
               type="text"
-              className="input2"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content="child name is required*"
               placeholder="Child Name"
-            />
-            <Tooltip
-              id="my-tooltip"
-              style={{ backgroundColor: "red" }}
-              place="bottom"
+              required
+              value={cName}
+              onChange={(e) => setCname(e.target.value)}
             />
             <input
               type="number"
-              className="input2"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content="number is required*"
               placeholder="Phone Number"
-            />
-            <Tooltip
-              id="my-tooltip"
-              style={{ backgroundColor: "red" }}
-              place="bottom"
+              required
+              value={pNumber}
+              onChange={(e) => setpNumber(e.target.value)}
             />
             <input
               type="email"
-              className="input2"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content="email is required*"
               placeholder="Email"
-            />
-            <Tooltip
-              id="my-tooltip"
-              style={{ backgroundColor: "red" }}
-              place="bottom"
+              required
+              value={eMail}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <div className="date-input">
               <input
                 type="date"
-                className="input2"
-                data-tooltip-id="my-tooltip"
-                data-tooltip-content="DOB is required*"
                 placeholder="D . O . B"
-              />
-            </div>
-            <Tooltip
-              id="my-tooltip"
-              style={{ backgroundColor: "red" }}
-              place="bottom"
-            />
-            <div className="mssg-input">
-              <input
-                type="text"
-                className="mssgBox"
-                placeholder="Enter Your Message"
+                // required
+                // value={admissionData}
+                // onChange={(e) => setAdmissionData(e.target.value)}
               />
             </div>
             <button>Submit</button>
@@ -131,7 +119,7 @@ export default function Adimission() {
 
       <section className="sec3-Admission">
         <h1>
-          Admission Process at <span>Little Millennium Convent</span> 
+          Admission Process at <span>Little Millennium Convent</span>
         </h1>
         <p>
           The Admission process at Little Millennium is simple and
@@ -164,6 +152,8 @@ export default function Adimission() {
           </div>
         </div>
       </section>
+      <ToastContainer />
+
     </>
   );
 }
