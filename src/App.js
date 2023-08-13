@@ -9,13 +9,11 @@ import { useEffect } from "react";
 import Footer from "./Components/Footer/Footer";
 import Adimission from "./pages/Admission/Admission";
 import Contact from "./pages/Contact/Contact";
-import watsappLogo from "./assets/images/watsapp-logo.png";
-import whatsappLink from "./assets/links/whatsappLink";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 500 });
   }, []);
   return (
     <div className="App">
@@ -28,7 +26,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <img className="watsapp" src={watsappLogo} onClick={whatsappLink} />
     </div>
   );
 }

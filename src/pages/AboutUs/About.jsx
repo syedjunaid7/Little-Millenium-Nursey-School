@@ -112,7 +112,7 @@ export default function About() {
 
       <section className="about-sec2">
         <div>
-          <div data-aos="fade-right">
+          <div>
             <img src={vision} alt="vision" />
             <h4>Vision</h4>
             <p>
@@ -121,7 +121,7 @@ export default function About() {
               Learners.
             </p>
           </div>
-          <div data-aos="fade-down">
+          <div>
             <img src={mission} alt="mission" />
             <h4>Mission</h4>
             <p>
@@ -130,7 +130,7 @@ export default function About() {
               Potential.
             </p>
           </div>
-          <div data-aos="fade-left">
+          <div>
             <img src={philosphy} alt="vision" />
             <h4>Philosophy</h4>
             <p>

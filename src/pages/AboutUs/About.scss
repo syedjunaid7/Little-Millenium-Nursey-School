@@ -270,22 +270,22 @@
   }
 }
 
-@media (min-height : 1000px) and (min-width : 1000px){
-  .about-top .stats-box-main {
-    margin-top: 22%;
-  }
-  .about-top .stats-box-main .stat-circle h1 {
-    margin-bottom: 100px;
-    margin-left: -27px;
+// @media (min-height : 1000px) and (min-width : 1000px){
+//   .about-top .stats-box-main {
+//     margin-top: 22%;
+//   }
+//   .about-top .stats-box-main .stat-circle h1 {
+//     margin-bottom: 100px;
+//     margin-left: -27px;
 
-  }
-  .about-top .stats-box-main .stat-circle h2 {
-    margin-right: 35px;
-  }
-  .about-sec2 {
-    background-size: cover;
-  }
-}
+//   }
+//   .about-top .stats-box-main .stat-circle h2 {
+//     margin-right: 35px;
+//   }
+//   .about-sec2 {
+//     background-size: cover;
+//   }
+// }
 
 @media (max-width: 768px) {
   .about-top {
@@ -295,6 +295,10 @@
   .about-top .about-content .about-h1 {
     font-size: var(--mobile-scree-h1);
   }
+  .about-sec1 div img {
+    height: 27vh;
+    margin: 8px;
+}
   .about-top .about-content p {
     font-size: 1.3rem;
   }
@@ -341,13 +345,13 @@
   }
   .about-sec2 {
     background-size: cover;
-    padding: 5rem 1.5rem;
-
+    padding: 5.5rem 1.5rem 2.5rem 1.5rem;
     div {
       flex-direction: column;
       div {
-        width: auto;
-        margin: 1rem;
+        width: 80%;
+        margin: 0;
+        margin-bottom: 50px;
         img {
           top: -1.8rem;
           width: 25%;

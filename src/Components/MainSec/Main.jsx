@@ -3,17 +3,37 @@ import "./Main.scss";
 import Card from "../Cards/Card";
 import Slider from "../Slider/Slider";
 import kangaroo from "../../assets/images/Our-Purpose.webp";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
+import PhoneLink from "../../assets/links/PhoneLink";
+
 export default function Main() {
+  const [name, setname] = useState('');
+  const [number, setNumber] = useState('')
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    if (name !== '' && number !== '') {
+      setname('')
+      setNumber('')
+      toast(" We will Reach Youu Soon !");
+    }
+  };
+
+  const handlePhoneClick = () => {
+    const phoneNumber = '+971585827919';
+    window.location.href = `tel:${phoneNumber}`;
+  };
   return (
     <>
       <section className="sec1">
         <div className="content">
-          <h1 data-aos="fade-up">
+          <h1 name-aos="fade-up">
             <span style={{ color: "#6d3fb1" }}>WELCOME TO</span> Little
             Millenium Convent
           </h1>
           <h3>About Little Millenium Convent</h3>
-          <p className="about-para" data-aos="fade-down">
+          <p className="about-para" name-aos="fade-down">
             The name <strong>Little Millenium</strong> comes from the Latin
             language and means, educate, teach and instruct.
             <strong>Little Millenium Convent</strong> school is one of the most
@@ -30,7 +50,7 @@ export default function Main() {
           <h1>
             KEEP IN <span>TOUCH</span>
           </h1>
-          <button data-aos="zoom-in">CONTACT US</button>
+          <button name-aos="zoom-in" onClick={handlePhoneClick}>CONTACT US</button>
         </div>
       </section>
 
@@ -52,18 +72,34 @@ export default function Main() {
               teaching and playing with all of our students.
             </p>
           </div>
-          <div className="input-box" data-aos="zoom-in">
-            <input type="text" placeholder="Full Name" />
-            <input type="number" placeholder="Phone Number" />
-            <button>Submit</button>
-          </div>
+          <form className="input-box" name-aos="zoom-in" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              value={name}
+              onChange={(e) => setname(e.target.value )}
+            />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              required
+              value={number}
+              onChange={(e) =>
+                setNumber(e.target.value)
+              }
+            />
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
 
       <section className="main-sec4">
         <img className="kangaroo" src={kangaroo} alt="kangaroo img" />
         <div>
-          <h1><span>Our</span> Purpose</h1>
+          <h1>
+            <span>Our</span> Purpose
+          </h1>
           <p>
             Our Purpose To create a learning environment that accommodates all
             individual learners providing them with opportunities to maximise
@@ -74,6 +110,7 @@ export default function Main() {
           </p>
         </div>
       </section>
+      <ToastContainer />
     </>
   );
 }
