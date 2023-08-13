@@ -12,6 +12,7 @@ import infra2 from "../../assets/images/infra-2.jpeg";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import CountUp from "react-countup";
 import { useNavigate } from "react-router-dom";
+import kangaroo from "../../assets/images/Our-Purpose.webp";
 export default function About() {
   const navigate = useNavigate();
   return (
@@ -30,39 +31,35 @@ export default function About() {
       </div>
 
       <section className="about-top">
-        <div className="about-content" data-aos="fade-right">
-          <h1 className="about-h1">
-            <span>Little Millennium®</span> <br />
-            <span style={{ fontSize: "2.5rem", color: "black" }}>
-              Convent School
-            </span>
-          </h1>
-          <p>
-            The fastest-growing pre-school <br />
-            chain in India.
-          </p>
-        </div>
-        <div className="stats-box-main" data-aos="fade-left">
-          <div className="stat-circle">
-            <div className="circle-content">
+        <div className="about-top-in">
+          <div className="about-content" data-aos="fade-right">
+            <h1 className="about-h1">
+              <span>Little Millennium®</span> <br />
+              <span style={{ fontSize: "2.5rem", color: "black" }}>
+                Convent School
+              </span>
+            </h1>
+            <p>
+              The fastest-growing pre-school <br />
+              chain in India.
+            </p>
+          </div>
+          <div className="stats-box-main">
+            <div className="stat-circle">
               <h2>
                 <CountUp className="countUp" start={0} end={200} duration={4} />
                 <span>K</span>
               </h2>
               <h1>HAPPY CHILDREN</h1>
             </div>
-          </div>
-          <div className="stat-circle">
-            <div className="circle-content">
+            <div className="stat-circle">
               <h2>
                 <CountUp className="countUp" start={0} end={5} duration={4} />
                 <span>K</span>
               </h2>
               <h1>CITIES</h1>
             </div>
-          </div>
-          <div className="stat-circle">
-            <div className="circle-content">
+            <div className="stat-circle">
               <h2>
                 <CountUp className="countUp" start={0} end={20} duration={4} />
               </h2>
