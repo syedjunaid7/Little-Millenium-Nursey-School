@@ -1,0 +1,234 @@
+
+.admission-container {
+  display: flex;
+  flex-direction: row;
+  padding: 7rem;
+  background: var(--background-color) url("../../assets/images/aside-bottom-img.png");;
+
+  .sec1-Admission {
+    text-align: left;
+    padding: 1rem;
+    transform: translate(0px, -50px);
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+      span{
+        color: yellow;
+      }
+    }
+    p {
+      font-size: var(--font-size-p);
+      line-height: var(--line-height-p);
+      margin: 0;
+      color: white;
+    }
+    img {
+      width: 90px;
+    }
+    .icons-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-top: 20px;
+    }    
+  }
+
+  .sec2-Admission {
+    background: var(--background-url);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    h3{
+      font-size: var(--font-size-h3);
+      span{
+        color: var(--background-color);
+      }
+    }
+    img {
+      position: absolute;
+      top: -40px;
+      right: -13px;
+    }
+
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 30vw;
+    padding: 0 2rem;
+
+    input {
+      padding: 1rem 2rem;
+      width: 80%;
+      color: white;
+      border-style: none;
+      background-color: #c2a8e9;
+      margin-bottom: 20px;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      &::placeholder {
+        color: white; 
+      }
+      
+    }
+    .date-input{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .mssg-input{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      input{
+        padding: 2.5rem 2rem;
+      }
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+
+
+.sec3-Admission {
+  background: var(--background-url);
+  padding: 7rem;
+  h1 {
+    margin: 0;
+    font-size: var(--font-size-h1);
+    span{
+      color: var(--background-color);
+    }
+  }
+  p {
+    margin: 0;
+    font-size: var(--font-size-p);
+    margin-top: 15px;
+
+  }
+  .process-card {
+    display: flex;
+    h1 {
+      color: var(--background-color);
+      text-align: center;
+    }
+    p {
+      font-size: var(--font-size-other);
+      color: rgb(77, 77, 77);
+      text-align: center;
+    }
+    div {
+      background: white;
+      width: 25%;
+      margin: 5%;
+      padding: 1rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 2px 2px 10px rgb(95, 94, 94);
+    }
+  }
+}
+
+
+// @media (max-width: 768px) {
+//   .admission-container {
+//     flex-direction: column;
+//     padding: 1rem;
+//   }
+//   .sec1-Admission {
+//     text-align: center;
+//     .icons-box {
+//       gap: 0;
+//     }
+//     img {
+//       width: 25%;
+//     }
+//   }
+
+//   .sec2-Admission {
+//     padding: 0.7rem;
+//     padding-bottom: 1rem;
+//     button {
+//       width: 40%;
+//     }
+//     .mssgBox {
+//       padding: 2rem 1.2rem;
+//     }
+//     input {
+//       width: 85%;
+//     }
+//   }
+//   .sec3-Admission {
+//     padding: 5rem 1rem;
+//     .process-card {
+//       margin-top: 30px;
+//       flex-direction: column;
+//       div {
+//         width: auto;
+//         height: 20vh;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 1920px) {
+  .admission-container .sec2-Admission {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width : 400px){
+  .admission-container .sec1-Admission h1 {
+    font-size: var(--mobile-scree-h1);
+    margin-bottom: 15px;
+}
+.admission-container .sec1-Admission p {
+  font-size: var( --mobile-font-size-p);
+  line-height: var(--mobile-line-height-p);
+}
+  .admission-container .sec2-Admission {
+    width: 90%;
+}
+  .admission-container {
+    padding: 0;
+    flex-direction: column;
+}
+.admission-container .sec1-Admission img {
+  width: 80px;
+}
+.admission-container {
+  padding: 5rem 0;
+  align-items: center;
+}
+.admission-container form {
+  width: 90%;
+  padding: 1rem 0;
+  height: auto;
+}
+.sec3-Admission {
+  background: var(--background-url);
+  padding: 5rem 1rem;
+  h1{
+    font-size: var(--mobile-scree-h1);
+  }
+  p{
+    font-size: var(--mobile-font-size-p);
+  }
+  .process-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    div{
+      width: auto;
+    }
+}
+}
+}

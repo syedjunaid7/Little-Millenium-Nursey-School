@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@200;400&family=Mulish:wght@300;400&family=Nunito:wght@300;400;500;600&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500&family=Roboto:wght@300;400&family=Rubik:wght@300;400&family=Space+Grotesk:wght@600&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+    --background-color: #6d3fb1;
+    --background-url: url("./assets/images/home3.309907f5a7e58d11b1f1.svg");
+    --main-color: #007bff;
+    --font-size-h1: 3.3rem;
+    --font-size-h3: 2rem;
+    --font-size-p: 1.4rem;
+    --line-height-p: 2.3;
+    --font-size-other: 1.3rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    --mobile-scree-h1: 2.4rem;
+    --mobile-scree-h3: 1.7rem;
+    --mobile-font-size-p: 1.1rem;
+    --mobile-line-height-p: 1.8;
+
+}
+button{
+background-color: #6d3fb1;
+font-size: 1rem;
+font-weight: 700;
+letter-spacing: 0.1rem;
+padding: 15px 25px;
+border-radius: 0.3rem;
+border-style: none;
+color: white;
+transition: transform 0.1s ease-in-out;
+}
+button:hover {
+  background-color: #7b4cc2;
+  cursor: pointer;
+}
+.watsapp{
+    height: 8vh;
+    position: fixed;
+    margin: 45px;
+    bottom: 0;
+    right: 0;
+    transition: 300ms ease-in-out;
+    z-index: 1;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .watsapp:hover{
+    transform: scale(1.2);
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  .watsapp{
+    height: 6vh;
   }
-}
