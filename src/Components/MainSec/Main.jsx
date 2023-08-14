@@ -13,6 +13,11 @@ export default function Main() {
   const handleSubmit = (event) => {
     event.preventDefault(); 
     if (name !== '' && number !== '') {
+      const email = 'info@littlemillenium.com';
+      const subject = 'New Form Submission';
+      const body = `Name: ${name}\nNumber: ${number}`;
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(mailtoLink);
       setname('')
       setNumber('')
       toast(" We will Reach Youu Soon !");
