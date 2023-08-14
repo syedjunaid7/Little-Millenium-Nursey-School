@@ -50,7 +50,7 @@ export default function About() {
                 <CountUp className="countUp" start={0} end={200} duration={4} />
                 <span>K</span>
               </h2>
-              <h1>HAPPY CHILDREN</h1>
+              <h1>HAPPY <br/>CHILDREN</h1>
             </div>
             <div className="stat-circle">
               <h2>

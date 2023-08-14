@@ -19,13 +19,13 @@ export default function ContactUs() {
   return (
     <div>
       <div className="topper">
-        <h1>Contact  <span>Us</span></h1>
+        <h1>Contact <span> Us</span></h1>
         <div className="topper-box">
           <p onClick={() => navigate("/")} className="link">
             Home
           </p>
           <HiOutlineChevronRight className="greater" />
-          <p>ContactUs</p>
+          <p>Contact Us</p>
         </div>
       </div>
       <div className="contactUs-div">

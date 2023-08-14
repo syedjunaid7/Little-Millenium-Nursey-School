@@ -110,9 +110,10 @@
     h1 {
       color: var(--background-color);
       text-align: center;
+      font-size: var(--font-size-h3);
     }
     p {
-      font-size: var(--font-size-other);
+      font-size: var(--mobile-font-size-p);
       color: rgb(77, 77, 77);
       text-align: center;
     }
